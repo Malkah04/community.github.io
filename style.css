@@ -1,0 +1,143 @@
+body{
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.header ,
+.aside,
+.section,
+footer{
+    background-image: url(background.svg);
+    background-size: cover;
+    background-color: blueviolet;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+.c{
+    display: flex;
+    
+}
+.header{
+    padding: 20px;
+    color: white;
+    font-size: x-large;
+}
+.aside{
+    flex: 1;
+    /* width: 50%; */
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+.section{
+    flex: 1;
+    /* width: 50%; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+.b{
+    font-weight: bold;
+    color: white;
+    font-size: 55px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    margin: 28px 7px;
+}
+
+.reg{
+    color: rgb(98, 43, 150);
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.reg:hover{
+    color: white;
+    background-color: rgb(228, 157, 169);
+}
+footer div{
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    margin-left: 1200px;
+    gap: 30px;
+    background-image: url(background.svg);
+    background-color: blueviolet;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+}
+footer img{
+    filter: brightness(0) invert(1);/* to make the image be white  */
+}
+@media screen and (max-width:768px) {
+    body{
+        display: flex;
+     width: 100%;
+     flex-direction: column;
+    }
+    .c{
+     flex-direction: column;
+    }
+    .aside{
+    width: calc(100%-40px);
+     /* margin: 20px; */
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     box-sizing: border-box;
+    }
+    .section{
+        /* flex-direction: column; */
+     box-sizing: border-box;
+     width: 100%;
+     padding: 20%;
+    }
+
+    .aside img{
+        width: 70vw;
+        height: 50vh;
+        margin-left: 10px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: blueviolet;
+        padding: 10px;
+        
+        bottom: 0;
+        left: 0;
+        
+    }
+    footer div{
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        
+    }
+     footer img{
+        filter: brightness(0) invert(1);
+        width: 20px;
+        height: 20px;
+     }
+     .section .reg{
+        width: 200px;
+     }
+        
+ }
